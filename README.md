@@ -25,7 +25,10 @@ composer install
 # Création de la base de données
 php bin/console doctrine:database:create
 
-# Création des tables (migrations)
+# Création du fichier de migrations
+php bin/console make:migration
+ 
+# Création des tables en base de données
 php bin/console doctrine:migrations:migrate
 
 # Insertions des jeux de données (fixtures)
